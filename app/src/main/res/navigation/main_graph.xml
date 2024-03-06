@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/navigation2">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.foursquare.presentation.fragments.ProfileFragment"
+        android:label="ProfileFragment" />
+    <navigation android:id="@+id/navigation2"
+        app:startDestination="@id/homeFragment">
+        <fragment
+            android:id="@+id/homeFragment"
+            android:name="com.example.foursquare.presentation.fragments.HomeFragment"
+            android:label="HomeFragment">
+            <action
+                android:id="@+id/action_homeFragment_to_itemFragment2"
+                app:destination="@id/itemFragment2" />
+        </fragment>
+        <fragment
+            android:id="@+id/itemFragment2"
+            android:name="com.example.foursquare.presentation.fragments.ItemFragment"
+            android:label="ItemFragment" />
+    </navigation>
+    <navigation android:id="@+id/navigation3"
+        app:startDestination="@id/historyFragment">
+        <fragment
+            android:id="@+id/historyFragment"
+            android:name="com.example.foursquare.presentation.fragments.HistoryFragment"
+            android:label="HistoryFragment">
+            <action
+                android:id="@+id/action_historyFragment_to_itemFragment22"
+                app:destination="@id/itemFragment22" />
+        </fragment>
+        <fragment
+            android:id="@+id/itemFragment22"
+            android:name="com.example.foursquare.presentation.fragments.itemFragment2"
+            android:label="itemFragment2" />
+    </navigation>
+</navigation>

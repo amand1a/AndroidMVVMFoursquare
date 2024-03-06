@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Состояние при нажатии -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#DDDDDD" /> <!-- Цвет фона при нажатии -->
+            <corners android:radius="16dp" /> <!-- Закругление углов -->
+        </shape>
+    </item>
+
+    <!-- Состояние при выборе -->
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#EEEEEE" /> <!-- Цвет фона при выборе -->
+            <corners android:radius="16dp" /> <!-- Закругление углов -->
+        </shape>
+    </item>
+
+    <!-- Состояние по умолчанию -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#00000000" /> <!-- Прозрачный фон -->
+            <corners android:radius="16dp" /> <!-- Закругление углов -->
+        </shape>
+    </item>
+</selector>

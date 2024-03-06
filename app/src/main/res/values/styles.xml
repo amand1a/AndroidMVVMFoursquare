@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationViewCustomStyle" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="android:background">@drawable/bottom_nav_item_background</item>
+    </style>
+
+</resources>
